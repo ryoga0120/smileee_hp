@@ -1,0 +1,1262 @@
+[
+  {
+    "name": "brand_logo_area",
+    "category": "brand",
+    "file": "brand/brand_logo_area.png",
+    "box": [
+      34,
+      65,
+      275,
+      178
+    ],
+    "transparent": false,
+    "width": 241,
+    "height": 113,
+    "notes": "Logo style area from the asset sheet"
+  },
+  {
+    "name": "brand_wave_blobs",
+    "category": "brand",
+    "file": "brand/brand_wave_blobs.png",
+    "box": [
+      0,
+      295,
+      292,
+      378
+    ],
+    "transparent": false,
+    "width": 292,
+    "height": 83,
+    "notes": "Decorative pink/blue background wave and small motifs"
+  },
+  {
+    "name": "product_room_shoes_card",
+    "category": "products",
+    "file": "products/product_room_shoes_card.png",
+    "box": [
+      303,
+      62,
+      507,
+      281
+    ],
+    "transparent": false,
+    "width": 204,
+    "height": 219,
+    "notes": ""
+  },
+  {
+    "name": "product_high_tech_sneaker_card",
+    "category": "products",
+    "file": "products/product_high_tech_sneaker_card.png",
+    "box": [
+      516,
+      62,
+      705,
+      281
+    ],
+    "transparent": false,
+    "width": 189,
+    "height": 219,
+    "notes": ""
+  },
+  {
+    "name": "product_custom_insole_card",
+    "category": "products",
+    "file": "products/product_custom_insole_card.png",
+    "box": [
+      714,
+      62,
+      887,
+      281
+    ],
+    "transparent": false,
+    "width": 173,
+    "height": 219,
+    "notes": ""
+  },
+  {
+    "name": "product_3d_printer_card",
+    "category": "products",
+    "file": "products/product_3d_printer_card.png",
+    "box": [
+      895,
+      62,
+      1052,
+      281
+    ],
+    "transparent": false,
+    "width": 157,
+    "height": 219,
+    "notes": ""
+  },
+  {
+    "name": "scene_woman_walking_city",
+    "category": "scenes",
+    "file": "scenes/scene_woman_walking_city.png",
+    "box": [
+      1080,
+      50,
+      1290,
+      204
+    ],
+    "transparent": false,
+    "width": 210,
+    "height": 154,
+    "notes": ""
+  },
+  {
+    "name": "scene_room_shoes_lifestyle",
+    "category": "scenes",
+    "file": "scenes/scene_room_shoes_lifestyle.png",
+    "box": [
+      1300,
+      50,
+      1515,
+      204
+    ],
+    "transparent": false,
+    "width": 215,
+    "height": 154,
+    "notes": ""
+  },
+  {
+    "name": "scene_phone_foot_scan",
+    "category": "scenes",
+    "file": "scenes/scene_phone_foot_scan.png",
+    "box": [
+      1080,
+      214,
+      1205,
+      360
+    ],
+    "transparent": false,
+    "width": 125,
+    "height": 146,
+    "notes": ""
+  },
+  {
+    "name": "scene_physio_consultation",
+    "category": "scenes",
+    "file": "scenes/scene_physio_consultation.png",
+    "box": [
+      1212,
+      214,
+      1336,
+      360
+    ],
+    "transparent": false,
+    "width": 124,
+    "height": 146,
+    "notes": ""
+  },
+  {
+    "name": "scene_team_meeting",
+    "category": "scenes",
+    "file": "scenes/scene_team_meeting.png",
+    "box": [
+      1340,
+      214,
+      1518,
+      360
+    ],
+    "transparent": false,
+    "width": 178,
+    "height": 146,
+    "notes": ""
+  },
+  {
+    "name": "foot_toe_space_circle",
+    "category": "foot_comfort",
+    "file": "foot_comfort/foot_toe_space_circle.png",
+    "box": [
+      18,
+      420,
+      103,
+      555
+    ],
+    "transparent": false,
+    "width": 85,
+    "height": 135,
+    "notes": ""
+  },
+  {
+    "name": "foot_gentle_hold_circle",
+    "category": "foot_comfort",
+    "file": "foot_comfort/foot_gentle_hold_circle.png",
+    "box": [
+      120,
+      420,
+      222,
+      555
+    ],
+    "transparent": false,
+    "width": 102,
+    "height": 135,
+    "notes": ""
+  },
+  {
+    "name": "foot_soft_sole_circle",
+    "category": "foot_comfort",
+    "file": "foot_comfort/foot_soft_sole_circle.png",
+    "box": [
+      236,
+      420,
+      333,
+      555
+    ],
+    "transparent": false,
+    "width": 97,
+    "height": 135,
+    "notes": ""
+  },
+  {
+    "name": "foot_comfort_walk_circle",
+    "category": "foot_comfort",
+    "file": "foot_comfort/foot_comfort_walk_circle.png",
+    "box": [
+      350,
+      420,
+      449,
+      555
+    ],
+    "transparent": false,
+    "width": 99,
+    "height": 135,
+    "notes": ""
+  },
+  {
+    "name": "process_user_research_icon",
+    "category": "process",
+    "file": "process/process_user_research_icon.png",
+    "box": [
+      489,
+      420,
+      575,
+      505
+    ],
+    "transparent": false,
+    "width": 86,
+    "height": 85,
+    "notes": ""
+  },
+  {
+    "name": "process_foot_measurement_icon",
+    "category": "process",
+    "file": "process/process_foot_measurement_icon.png",
+    "box": [
+      580,
+      420,
+      665,
+      505
+    ],
+    "transparent": false,
+    "width": 85,
+    "height": 85,
+    "notes": ""
+  },
+  {
+    "name": "process_3d_modeling_icon",
+    "category": "process",
+    "file": "process/process_3d_modeling_icon.png",
+    "box": [
+      675,
+      420,
+      755,
+      505
+    ],
+    "transparent": false,
+    "width": 80,
+    "height": 85,
+    "notes": ""
+  },
+  {
+    "name": "process_prototype_icon",
+    "category": "process",
+    "file": "process/process_prototype_icon.png",
+    "box": [
+      765,
+      420,
+      850,
+      505
+    ],
+    "transparent": false,
+    "width": 85,
+    "height": 85,
+    "notes": ""
+  },
+  {
+    "name": "process_physio_research_icon",
+    "category": "process",
+    "file": "process/process_physio_research_icon.png",
+    "box": [
+      865,
+      420,
+      948,
+      505
+    ],
+    "transparent": false,
+    "width": 83,
+    "height": 85,
+    "notes": ""
+  },
+  {
+    "name": "process_monitor_test_icon",
+    "category": "process",
+    "file": "process/process_monitor_test_icon.png",
+    "box": [
+      957,
+      420,
+      1038,
+      505
+    ],
+    "transparent": false,
+    "width": 81,
+    "height": 85,
+    "notes": ""
+  },
+  {
+    "name": "badge_in_development",
+    "category": "badges",
+    "file": "badges/badge_in_development.png",
+    "box": [
+      1094,
+      424,
+      1204,
+      466
+    ],
+    "transparent": true,
+    "width": 110,
+    "height": 42,
+    "notes": ""
+  },
+  {
+    "name": "badge_monitor_registration",
+    "category": "badges",
+    "file": "badges/badge_monitor_registration.png",
+    "box": [
+      1210,
+      424,
+      1344,
+      466
+    ],
+    "transparent": true,
+    "width": 134,
+    "height": 42,
+    "notes": ""
+  },
+  {
+    "name": "badge_prelaunch_product",
+    "category": "badges",
+    "file": "badges/badge_prelaunch_product.png",
+    "box": [
+      1354,
+      424,
+      1490,
+      466
+    ],
+    "transparent": true,
+    "width": 136,
+    "height": 42,
+    "notes": ""
+  },
+  {
+    "name": "decor_heart_line",
+    "category": "decorations",
+    "file": "decorations/decor_heart_line.png",
+    "box": [
+      1093,
+      505,
+      1160,
+      560
+    ],
+    "transparent": true,
+    "width": 67,
+    "height": 55,
+    "notes": ""
+  },
+  {
+    "name": "decor_sparkles",
+    "category": "decorations",
+    "file": "decorations/decor_sparkles.png",
+    "box": [
+      1160,
+      505,
+      1210,
+      560
+    ],
+    "transparent": true,
+    "width": 50,
+    "height": 55,
+    "notes": ""
+  },
+  {
+    "name": "decor_footprints_blue",
+    "category": "decorations",
+    "file": "decorations/decor_footprints_blue.png",
+    "box": [
+      1230,
+      500,
+      1292,
+      560
+    ],
+    "transparent": true,
+    "width": 62,
+    "height": 60,
+    "notes": ""
+  },
+  {
+    "name": "decor_wave_blue",
+    "category": "decorations",
+    "file": "decorations/decor_wave_blue.png",
+    "box": [
+      1312,
+      505,
+      1390,
+      560
+    ],
+    "transparent": true,
+    "width": 78,
+    "height": 55,
+    "notes": ""
+  },
+  {
+    "name": "decor_dot_grid_pastel",
+    "category": "decorations",
+    "file": "decorations/decor_dot_grid_pastel.png",
+    "box": [
+      1410,
+      500,
+      1490,
+      560
+    ],
+    "transparent": true,
+    "width": 80,
+    "height": 60,
+    "notes": ""
+  },
+  {
+    "name": "decor_blob_pink",
+    "category": "decorations",
+    "file": "decorations/decor_blob_pink.png",
+    "box": [
+      1088,
+      590,
+      1230,
+      660
+    ],
+    "transparent": true,
+    "width": 142,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "decor_blob_gradient",
+    "category": "decorations",
+    "file": "decorations/decor_blob_gradient.png",
+    "box": [
+      1232,
+      590,
+      1390,
+      660
+    ],
+    "transparent": true,
+    "width": 158,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "decor_blob_peach",
+    "category": "decorations",
+    "file": "decorations/decor_blob_peach.png",
+    "box": [
+      1392,
+      590,
+      1528,
+      660
+    ],
+    "transparent": true,
+    "width": 136,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "value_toe_space_card",
+    "category": "value_cards",
+    "file": "value_cards/value_toe_space_card.png",
+    "box": [
+      22,
+      648,
+      266,
+      767
+    ],
+    "transparent": false,
+    "width": 244,
+    "height": 119,
+    "notes": "拇趾周りのゆとり"
+  },
+  {
+    "name": "value_stable_hold_card",
+    "category": "value_cards",
+    "file": "value_cards/value_stable_hold_card.png",
+    "box": [
+      282,
+      648,
+      528,
+      767
+    ],
+    "transparent": false,
+    "width": 246,
+    "height": 119,
+    "notes": "独自構造での足の固定"
+  },
+  {
+    "name": "value_3d_custom_card",
+    "category": "value_cards",
+    "file": "value_cards/value_3d_custom_card.png",
+    "box": [
+      543,
+      648,
+      800,
+      767
+    ],
+    "transparent": false,
+    "width": 257,
+    "height": 119,
+    "notes": "3Dプリンターを使った低コストオーダーメイド"
+  },
+  {
+    "name": "value_physio_research_card",
+    "category": "value_cards",
+    "file": "value_cards/value_physio_research_card.png",
+    "box": [
+      815,
+      648,
+      1060,
+      767
+    ],
+    "transparent": false,
+    "width": 245,
+    "height": 119,
+    "notes": "理学療法士との共同研究"
+  },
+  {
+    "name": "value_icon_toe_space",
+    "category": "value_icons",
+    "file": "value_icons/value_icon_toe_space.png",
+    "box": [
+      34,
+      667,
+      101,
+      746
+    ],
+    "transparent": true,
+    "width": 67,
+    "height": 79,
+    "notes": ""
+  },
+  {
+    "name": "value_icon_stable_hold",
+    "category": "value_icons",
+    "file": "value_icons/value_icon_stable_hold.png",
+    "box": [
+      294,
+      667,
+      365,
+      746
+    ],
+    "transparent": true,
+    "width": 71,
+    "height": 79,
+    "notes": ""
+  },
+  {
+    "name": "value_icon_3d_custom",
+    "category": "value_icons",
+    "file": "value_icons/value_icon_3d_custom.png",
+    "box": [
+      562,
+      667,
+      632,
+      746
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 79,
+    "notes": ""
+  },
+  {
+    "name": "value_icon_physio_research",
+    "category": "value_icons",
+    "file": "value_icons/value_icon_physio_research.png",
+    "box": [
+      824,
+      667,
+      894,
+      746
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 79,
+    "notes": ""
+  },
+  {
+    "name": "icon_home",
+    "category": "icons",
+    "file": "icons/icon_home.png",
+    "box": [
+      23,
+      805,
+      93,
+      875
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_concept",
+    "category": "icons",
+    "file": "icons/icon_concept.png",
+    "box": [
+      101,
+      805,
+      171,
+      875
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_products",
+    "category": "icons",
+    "file": "icons/icon_products.png",
+    "box": [
+      181,
+      805,
+      251,
+      875
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_research_development",
+    "category": "icons",
+    "file": "icons/icon_research_development.png",
+    "box": [
+      256,
+      805,
+      326,
+      875
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_materials_structure",
+    "category": "icons",
+    "file": "icons/icon_materials_structure.png",
+    "box": [
+      331,
+      805,
+      401,
+      875
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_measurement_app",
+    "category": "icons",
+    "file": "icons/icon_measurement_app.png",
+    "box": [
+      411,
+      805,
+      481,
+      875
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_monitor",
+    "category": "icons",
+    "file": "icons/icon_monitor.png",
+    "box": [
+      487,
+      805,
+      557,
+      875
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_collaboration",
+    "category": "icons",
+    "file": "icons/icon_collaboration.png",
+    "box": [
+      561,
+      805,
+      631,
+      875
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_news",
+    "category": "icons",
+    "file": "icons/icon_news.png",
+    "box": [
+      635,
+      805,
+      705,
+      875
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_contact",
+    "category": "icons",
+    "file": "icons/icon_contact.png",
+    "box": [
+      709,
+      805,
+      779,
+      875
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_support",
+    "category": "icons",
+    "file": "icons/icon_support.png",
+    "box": [
+      782,
+      805,
+      852,
+      875
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_quality_of_life",
+    "category": "icons",
+    "file": "icons/icon_quality_of_life.png",
+    "box": [
+      856,
+      805,
+      926,
+      875
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_gentleness",
+    "category": "icons",
+    "file": "icons/icon_gentleness.png",
+    "box": [
+      930,
+      805,
+      1000,
+      875
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_design",
+    "category": "icons",
+    "file": "icons/icon_design.png",
+    "box": [
+      1002,
+      805,
+      1072,
+      875
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_toe_space",
+    "category": "icons",
+    "file": "icons/icon_toe_space.png",
+    "box": [
+      17,
+      900,
+      87,
+      970
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_hold_structure",
+    "category": "icons",
+    "file": "icons/icon_hold_structure.png",
+    "box": [
+      94,
+      900,
+      164,
+      970
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_insole",
+    "category": "icons",
+    "file": "icons/icon_insole.png",
+    "box": [
+      174,
+      900,
+      244,
+      970
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_printer_3d",
+    "category": "icons",
+    "file": "icons/icon_printer_3d.png",
+    "box": [
+      255,
+      900,
+      325,
+      970
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_foot_data",
+    "category": "icons",
+    "file": "icons/icon_foot_data.png",
+    "box": [
+      329,
+      900,
+      399,
+      970
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_walking_support",
+    "category": "icons",
+    "file": "icons/icon_walking_support.png",
+    "box": [
+      410,
+      900,
+      480,
+      970
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_lightness",
+    "category": "icons",
+    "file": "icons/icon_lightness.png",
+    "box": [
+      486,
+      900,
+      556,
+      970
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_softness",
+    "category": "icons",
+    "file": "icons/icon_softness.png",
+    "box": [
+      558,
+      900,
+      628,
+      970
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_breathability",
+    "category": "icons",
+    "file": "icons/icon_breathability.png",
+    "box": [
+      634,
+      900,
+      704,
+      970
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_stability",
+    "category": "icons",
+    "file": "icons/icon_stability.png",
+    "box": [
+      711,
+      900,
+      781,
+      970
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_fit",
+    "category": "icons",
+    "file": "icons/icon_fit.png",
+    "box": [
+      785,
+      900,
+      855,
+      970
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_research",
+    "category": "icons",
+    "file": "icons/icon_research.png",
+    "box": [
+      856,
+      900,
+      926,
+      970
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_check",
+    "category": "icons",
+    "file": "icons/icon_check.png",
+    "box": [
+      930,
+      900,
+      1000,
+      970
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "icon_calendar",
+    "category": "icons",
+    "file": "icons/icon_calendar.png",
+    "box": [
+      1005,
+      900,
+      1075,
+      970
+    ],
+    "transparent": true,
+    "width": 70,
+    "height": 70,
+    "notes": ""
+  },
+  {
+    "name": "avatar_woman_01",
+    "category": "avatars",
+    "file": "avatars/avatar_woman_01.png",
+    "box": [
+      1090,
+      724,
+      1188,
+      835
+    ],
+    "transparent": false,
+    "width": 98,
+    "height": 111,
+    "notes": ""
+  },
+  {
+    "name": "avatar_woman_02",
+    "category": "avatars",
+    "file": "avatars/avatar_woman_02.png",
+    "box": [
+      1210,
+      724,
+      1305,
+      835
+    ],
+    "transparent": false,
+    "width": 95,
+    "height": 111,
+    "notes": ""
+  },
+  {
+    "name": "avatar_woman_03",
+    "category": "avatars",
+    "file": "avatars/avatar_woman_03.png",
+    "box": [
+      1314,
+      724,
+      1410,
+      835
+    ],
+    "transparent": false,
+    "width": 96,
+    "height": 111,
+    "notes": ""
+  },
+  {
+    "name": "avatar_woman_04",
+    "category": "avatars",
+    "file": "avatars/avatar_woman_04.png",
+    "box": [
+      1422,
+      724,
+      1515,
+      835
+    ],
+    "transparent": false,
+    "width": 93,
+    "height": 111,
+    "notes": ""
+  },
+  {
+    "name": "avatar_man_01",
+    "category": "avatars",
+    "file": "avatars/avatar_man_01.png",
+    "box": [
+      1090,
+      858,
+      1188,
+      1004
+    ],
+    "transparent": false,
+    "width": 98,
+    "height": 146,
+    "notes": ""
+  },
+  {
+    "name": "avatar_man_02",
+    "category": "avatars",
+    "file": "avatars/avatar_man_02.png",
+    "box": [
+      1210,
+      858,
+      1305,
+      1004
+    ],
+    "transparent": false,
+    "width": 95,
+    "height": 146,
+    "notes": ""
+  },
+  {
+    "name": "avatar_man_03",
+    "category": "avatars",
+    "file": "avatars/avatar_man_03.png",
+    "box": [
+      1314,
+      858,
+      1410,
+      1004
+    ],
+    "transparent": false,
+    "width": 96,
+    "height": 146,
+    "notes": ""
+  },
+  {
+    "name": "avatar_man_04",
+    "category": "avatars",
+    "file": "avatars/avatar_man_04.png",
+    "box": [
+      1422,
+      858,
+      1515,
+      1004
+    ],
+    "transparent": false,
+    "width": 93,
+    "height": 146,
+    "notes": ""
+  },
+  {
+    "name": "section_products_4up",
+    "category": "sections",
+    "file": "sections/section_products_4up.png",
+    "box": [
+      300,
+      54,
+      1055,
+      305
+    ],
+    "transparent": false,
+    "width": 755,
+    "height": 251,
+    "notes": ""
+  },
+  {
+    "name": "section_worldview_collage",
+    "category": "sections",
+    "file": "sections/section_worldview_collage.png",
+    "box": [
+      1075,
+      45,
+      1520,
+      365
+    ],
+    "transparent": false,
+    "width": 445,
+    "height": 320,
+    "notes": ""
+  },
+  {
+    "name": "section_comfort_4up",
+    "category": "sections",
+    "file": "sections/section_comfort_4up.png",
+    "box": [
+      12,
+      405,
+      455,
+      585
+    ],
+    "transparent": false,
+    "width": 443,
+    "height": 180,
+    "notes": ""
+  },
+  {
+    "name": "section_process_6up",
+    "category": "sections",
+    "file": "sections/section_process_6up.png",
+    "box": [
+      480,
+      405,
+      1045,
+      585
+    ],
+    "transparent": false,
+    "width": 565,
+    "height": 180,
+    "notes": ""
+  },
+  {
+    "name": "section_value_4cards",
+    "category": "sections",
+    "file": "sections/section_value_4cards.png",
+    "box": [
+      20,
+      640,
+      1065,
+      775
+    ],
+    "transparent": false,
+    "width": 1045,
+    "height": 135,
+    "notes": ""
+  },
+  {
+    "name": "section_icon_set",
+    "category": "sections",
+    "file": "sections/section_icon_set.png",
+    "box": [
+      20,
+      790,
+      1065,
+      980
+    ],
+    "transparent": false,
+    "width": 1045,
+    "height": 190,
+    "notes": ""
+  },
+  {
+    "name": "section_decorations",
+    "category": "sections",
+    "file": "sections/section_decorations.png",
+    "box": [
+      1080,
+      415,
+      1525,
+      665
+    ],
+    "transparent": false,
+    "width": 445,
+    "height": 250,
+    "notes": ""
+  },
+  {
+    "name": "section_avatar_8up",
+    "category": "sections",
+    "file": "sections/section_avatar_8up.png",
+    "box": [
+      1080,
+      700,
+      1520,
+      1010
+    ],
+    "transparent": false,
+    "width": 440,
+    "height": 310,
+    "notes": ""
+  }
+]
