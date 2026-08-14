@@ -278,6 +278,7 @@ h1,h2,h3,p,li,a,.eyebrow,.btn,.small-label,.visual-tag{overflow-wrap:anywhere}
 .about-story-card{padding:36px;background:linear-gradient(135deg,rgba(255,255,255,.96),rgba(255,244,248,.9))}
 .about-story-card p,.about-mvv-card p,.about-work-grid p,.about-team-card p,.about-company-card dd,.about-cta-panel p{color:#6b5e64;font-size:14px;font-weight:520;line-height:1.9;margin-top:10px}
 .about-story-card p:first-child{margin-top:0}
+.about-story-card p:not(:first-child):not(.about-story-sign){margin-top:18px}
 .about-story-card .about-story-sign{margin-top:26px;text-align:right;color:var(--rose-deep);font-weight:900;line-height:1.7}
 .about-mvv-section-new{background:linear-gradient(135deg,#fff7fb,#fff 54%,#eef9fc)}
 .about-mvv-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
