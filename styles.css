@@ -477,7 +477,7 @@ h1,h2,h3,p,li,a,.eyebrow,.btn,.small-label,.visual-tag{overflow-wrap:anywhere}
 .hallux-numbered-copy p:not(.eyebrow),.hallux-numbered-heading p:not(.eyebrow),.hallux-customer-grid p{color:#5f5358;font-weight:520;line-height:2;margin-top:16px}
 .hallux-diagram-card{position:relative;display:grid;gap:18px;padding:32px;border-radius:42px;background:linear-gradient(135deg,rgba(255,255,255,.94),rgba(255,244,248,.88));border:1px solid rgba(255,255,255,.96);box-shadow:var(--shadow);overflow:hidden}
 .hallux-diagram-card:before{content:"";position:absolute;right:-64px;top:-60px;width:220px;height:180px;border-radius:50%;background:rgba(220,243,249,.62)}
-.hallux-diagram-card>img{position:relative;z-index:1;width:min(260px,72%);margin:0 auto;filter:drop-shadow(0 16px 28px rgba(88,56,66,.12))}
+.hallux-diagram-card img{position:relative;z-index:1;width:min(260px,72%);margin:0 auto;filter:drop-shadow(0 16px 28px rgba(88,56,66,.12))}
 .hallux-diagram-line{position:absolute;z-index:2;left:51%;top:82px;width:86px;height:160px;border-right:3px dashed rgba(195,70,110,.48);border-radius:50%;transform:rotate(-8deg)}
 .hallux-explain-list{position:relative;z-index:2;display:grid;gap:12px}
 .hallux-explain-list article{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:center;padding:14px 16px;border-radius:20px;background:rgba(255,255,255,.86);border:1px solid rgba(255,255,255,.94)}
@@ -504,7 +504,7 @@ h1,h2,h3,p,li,a,.eyebrow,.btn,.small-label,.visual-tag{overflow-wrap:anywhere}
 @media(max-width:680px){.hallux-what-section{padding-top:124px}.hallux-numbered-heading{margin-bottom:30px}.hallux-section-number{font-size:62px}.hallux-numbered-copy h2,.hallux-numbered-heading h2{font-size:31px}.hallux-numbered-copy h3,.hallux-numbered-heading h3{font-size:23px}.hallux-customer-grid,.hallux-concern-grid-4{grid-template-columns:1fr}.hallux-diagram-card{padding:24px;border-radius:30px}.hallux-diagram-line{display:none}.hallux-customer-grid article{padding:22px}.hallux-scale-message{border-radius:22px}.hallux-pie-panel{padding:24px}.hallux-pie-chart{width:min(280px,100%)}.hallux-pie-chart:before{inset:28px}.hallux-pie-center strong{font-size:46px}.hallux-source a{word-break:break-word}}
 
 .technology-hero{background:linear-gradient(135deg,#fff8fb 0%,#fff 52%,#eef9fc 100%)}
-.hallux-diagram-card>.hallux-diagram-image{width:100%;max-width:100%;border-radius:28px;filter:drop-shadow(0 16px 28px rgba(88,56,66,.12))}
+.hallux-diagram-card .hallux-diagram-image{width:100%;max-width:100%;border-radius:28px;filter:drop-shadow(0 16px 28px rgba(88,56,66,.12))}
 .technology-axis-section{padding-top:156px}
 .technology-hero-copy h1{font-size:54px;line-height:1.24;letter-spacing:0;color:var(--brown)}
 .technology-section-copy h2,.technology-axis-section .section-heading h2,.technology-data-section .section-heading h2,.technology-development-section .section-heading h2,.technology-cta-panel h2{font-size:42px;line-height:1.36;letter-spacing:0;color:var(--brown)}
@@ -725,3 +725,96 @@ h2{font-size:clamp(28px,3.4vw,46px)}
   .hallux-what-section,.technology-axis-section,.products-lineup-section,
   .corporate-profile-section,.contact-entry-section{padding-top:112px}
 }
+
+/* ==================================================================
+   RESPONSIVE LAYER 2 — 2026-08-18
+   The 1100px breakpoint exists because the desktop nav no longer fits
+   there. Card grids were stacked at the same width purely because they
+   shared that query, which left 901–1100px full of half-empty rows.
+   This layer separates the two: nav still switches at 1100px, content
+   keeps its columns down to 900px.
+   ================================================================== */
+
+/* ---- 12. Card grids keep their columns down to 900px ------------- */
+@media(min-width:901px) and (max-width:1100px){
+  .contact-grid,
+  .product-card-row,
+  .about-leadership-grid,
+  .products-lineup-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .about-mvv-grid,
+  .about-work-grid,
+  .three-grid,
+  .technology-card-grid.three,
+  .technology-dev-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  /* three steps in two columns strands the third one beside dead space */
+  .tech-step-flow{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .tech-step-card:not(:last-child):after,
+  .tech-step-card:not(:last-child):before{display:block}
+  /* the date / title / tag row still fits on one line here */
+  .news-item{grid-template-columns:128px minmax(0,1fr) auto;gap:18px}
+  .news-item-title{grid-column:auto}
+  .news-type{grid-column:auto;grid-row:auto;justify-self:auto}
+}
+
+/* Two product cards read better side by side than stacked full-width:
+   the card art is only 204px wide and looks stranded in a 700px card. */
+@media(min-width:681px) and (max-width:900px){
+  .product-card-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+  /* an odd card left alone on the last row spans it instead of leaving a hole */
+  .products-design-grid>article:last-child:nth-child(odd),
+  .tech-step-flow>.tech-step-card:last-child:nth-child(odd),
+  .technology-dev-grid>article:last-child:nth-child(odd),
+  .technology-card-grid.three>article:last-child:nth-child(odd){grid-column:1/-1}
+  .tech-step-flow{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+/* ---- 13. "Company Profile" watermark ------------------------------
+   At 96px the word "Company" is wider than its own grid column, so it
+   slid under the adjacent card. Cap it to what the column can hold. */
+.about-company-label span{font-size:clamp(36px,6vw,72px)}
+@supports (container-type:inline-size){
+  .about-company-label{container-type:inline-size}
+  .about-company-label span{font-size:clamp(36px,19cqi,72px)}
+}
+
+/* ---- 14. Touch target sizing -------------------------------------
+   Below the nav breakpoint every link is a touch target; 44px is the
+   smallest comfortable one. */
+@media(max-width:1100px){
+  .brand{justify-content:center;min-height:44px}
+  .site-footer li a{display:inline-block;padding:8px 0}
+  /* lone card CTAs match the full-width buttons used elsewhere */
+  .contact-path .btn{width:100%}
+}
+@media(max-width:680px){
+  .hallux-source a{padding:9px 0}
+  .mobile-nav-mail{min-height:48px!important}
+}
+
+/* ---- 15. Japanese line breaking -----------------------------------
+   Headings otherwise break between any two kana, which splits words
+   like ものづくり. Chrome breaks at phrase boundaries instead; other
+   engines simply ignore the value. */
+h1,h2,h3,.lead,.section-heading p{word-break:auto-phrase}
+
+/* ---- 16. Landscape phones ----------------------------------------
+   The drawer has to fit six items into ~400px of height. */
+@media(orientation:landscape) and (max-height:520px){
+  .mobile-nav{padding-top:78px}
+  .mobile-nav-links{gap:6px}
+  .mobile-nav-links a{min-height:44px}
+  .mobile-nav-cta{margin-top:8px}
+  .mobile-nav-mail{min-height:40px!important;margin-top:0}
+}
+
+/* ---- 17. Hardening ------------------------------------------------ */
+/* <picture> only exists to pick a source; it must not become a box of
+   its own inside the grids and flex rows the <img> was laid out in. */
+picture{display:contents}
+/* Reserve the picture's aspect box so late-loading art cannot reflow the
+   page under the reader's thumb. (The top hero already carries its own
+   ratio inside the <=1100px banner rule.) */
+.hallux-diagram-image{aspect-ratio:2196/1920}
+.product-link-card img,.products-lineup-card>img{background:#fff}
+/* A long address is the one string that can outgrow a 320px phone. */
+.footer-bottom,.site-footer li,.mobile-nav-mail{overflow-wrap:anywhere}

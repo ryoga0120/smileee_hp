@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>私たちについて | smileee</title>
   <meta name="description" content="「我慢せずに、オシャレを楽しめる世界へ」。smileeeのミッション・ビジョン・バリュー、創業ストーリー、チーム、会社概要を紹介します。">
-  <link rel="stylesheet" href="styles.css?v=20260817-responsive-1">
-  <script src="site.js?v=20260817-responsive-1" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260818-responsive-2">
+  <script src="site.js?v=20260818-responsive-2" defer></script>
 </head>
 <body>
   
@@ -54,7 +54,15 @@
         </div>
         <div class="about-hero-visual">
           <div class="about-hero-photo">
-            <img src="assets/scenes/d817eeb4-b289-494c-bbe4-5c0406decad0.jpg" alt="スニーカーを履いて笑顔で並んで歩く2人の女性">
+            <picture>
+              <source type="image/webp" sizes="(min-width:560px) 480px, 92vw"
+                      srcset="assets/responsive/about-hero-420.webp 420w, assets/responsive/about-hero-640.webp 640w, assets/responsive/about-hero-809.webp 809w">
+              <source type="image/jpeg" sizes="(min-width:560px) 480px, 92vw"
+                      srcset="assets/responsive/about-hero-420.jpg 420w, assets/responsive/about-hero-640.jpg 640w, assets/responsive/about-hero-809.jpg 809w">
+              <img src="assets/responsive/about-hero-809.jpg" width="809" height="1024"
+                   fetchpriority="high"
+                   alt="スニーカーを履いて笑顔で並んで歩く2人の女性">
+            </picture>
           </div>
         </div>
       </div>

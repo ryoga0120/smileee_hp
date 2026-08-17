@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>smileee | 歩くを楽しもう。</title>
   <meta name="description" content="smileee（スマイリー）は、外反母趾に悩む女性のための、履き心地とデザインを両立するフットウェアブランド。現在、ルームシューズを開発中です。">
-  <link rel="stylesheet" href="styles.css?v=20260817-responsive-1">
-  <script src="site.js?v=20260817-responsive-1" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260818-responsive-2">
+  <script src="site.js?v=20260818-responsive-2" defer></script>
 </head>
 <body>
   
@@ -43,7 +43,15 @@
   <main>
     
 <section class="hero home-hero top-simple-hero">
-  <img class="top-hero-image" src="assets/avatars/TOP walikingwoman.png" alt="外反母趾に配慮したフットウェアで街を歩く女性">
+  <picture>
+    <source type="image/webp" sizes="100vw"
+            srcset="assets/responsive/top-hero-640.webp 640w, assets/responsive/top-hero-960.webp 960w, assets/responsive/top-hero-1280.webp 1280w, assets/responsive/top-hero-1672.webp 1672w">
+    <source type="image/jpeg" sizes="100vw"
+            srcset="assets/responsive/top-hero-640.jpg 640w, assets/responsive/top-hero-960.jpg 960w, assets/responsive/top-hero-1280.jpg 1280w, assets/responsive/top-hero-1672.jpg 1672w">
+    <img class="top-hero-image" src="assets/responsive/top-hero-1280.jpg" width="1672" height="941"
+         fetchpriority="high"
+         alt="外反母趾に配慮したフットウェアで街を歩く女性">
+  </picture>
 </section>
 
 <section class="section business-section">
@@ -55,7 +63,7 @@
     </div>
     <div class="product-card-row">
       <a class="product-link-card" href="products.html">
-        <img src="assets/products/product_room_shoes_card.png" alt="smileee開発中のピンクのルームシューズ">
+        <img src="assets/products/product_room_shoes_card.png" width="204" height="219" loading="lazy" decoding="async" alt="smileee開発中のピンクのルームシューズ">
         <div>
           <span class="small-label">Room Shoes</span>
           <h3>ルームシューズ</h3>
@@ -63,7 +71,7 @@
         </div>
       </a>
       <a class="product-link-card" href="products.html">
-        <img src="assets/products/product_high_tech_sneaker_card.png" alt="白と淡いピンク、水色のハイテクスニーカー">
+        <img src="assets/products/product_high_tech_sneaker_card.png" width="189" height="219" loading="lazy" decoding="async" alt="白と淡いピンク、水色のハイテクスニーカー">
         <div>
           <span class="small-label blue">High-tech Sneakers</span>
           <h3>ハイテクスニーカー【Coming Soon】</h3>
