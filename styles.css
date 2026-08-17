@@ -530,3 +530,198 @@ h1,h2,h3,p,li,a,.eyebrow,.btn,.small-label,.visual-tag{overflow-wrap:anywhere}
 .hallux-customer-grid article:nth-child(2):after{background:rgba(223,242,250,.58)}
 .hallux-customer-grid h3,.hallux-customer-grid p{position:relative;z-index:1}
 @media(max-width:680px){.products-design-grid article{min-height:auto}.hallux-customer-grid article:after{width:120px;height:120px;right:-44px;bottom:-46px}}
+
+/* ==================================================================
+   RESPONSIVE LAYER — 2026-08-17
+   Breakpoints: 1100px (tablet / nav switch), 900px (narrow tablet),
+                680px (phone), 420px (small phone)
+   ================================================================== */
+
+/* ---- 1. Base hardening ------------------------------------------ */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{overflow-x:hidden}
+.container{padding-left:max(24px,env(safe-area-inset-left));padding-right:max(24px,env(safe-area-inset-right))}
+/* the header is fixed — keep in-page anchors (#monitor / #partner) clear of it */
+[id]{scroll-margin-top:124px}
+a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid rgba(46,138,160,.6);outline-offset:3px;border-radius:14px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* ---- 2. Header layout + hamburger -------------------------------- */
+.header-actions{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.nav-toggle{display:none}
+@media(max-width:1100px){
+  .nav-toggle{display:grid;align-content:center;justify-items:center;gap:5px;width:46px;height:46px;padding:0;flex:0 0 auto;border:1px solid rgba(185,67,104,.2);border-radius:16px;background:rgba(255,255,255,.92);box-shadow:0 8px 20px rgba(88,56,66,.08);cursor:pointer;-webkit-tap-highlight-color:transparent}
+  .nav-toggle span{display:block;width:20px;height:2px;border-radius:2px;background:var(--rose-deep);transition:transform .26s ease,opacity .18s ease}
+  .nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+}
+
+/* ---- 3. Mobile navigation drawer --------------------------------- */
+.mobile-nav{position:fixed;inset:0;z-index:99;display:grid;align-content:start;padding:124px max(22px,env(safe-area-inset-right)) calc(36px + env(safe-area-inset-bottom,0px)) max(22px,env(safe-area-inset-left));background:linear-gradient(180deg,rgba(255,255,255,.97) 0%,rgba(255,244,248,.97) 100%);backdrop-filter:blur(18px);overflow-y:auto;overscroll-behavior:contain;opacity:0;visibility:hidden;transform:translateY(-10px);transition:opacity .24s ease,transform .28s ease,visibility .28s}
+.mobile-nav.is-open{opacity:1;visibility:visible;transform:none}
+.mobile-nav-links{display:grid;gap:8px;width:100%;max-width:560px;margin:0 auto}
+.mobile-nav-links a{display:flex;align-items:center;min-height:58px;padding:0 20px;border-radius:20px;background:rgba(255,255,255,.78);border:1px solid rgba(255,255,255,.94);box-shadow:0 8px 20px rgba(88,56,66,.06);color:#392e33;font-size:16px;font-weight:800}
+.mobile-nav-links a.active{background:linear-gradient(135deg,rgba(253,226,234,.96),rgba(210,237,248,.92));color:var(--rose-deep)}
+.mobile-nav-cta{margin-top:14px;justify-content:center;background:linear-gradient(135deg,var(--rose-deep),#db7f98 48%,var(--teal))!important;color:#fff!important;border-color:rgba(255,255,255,.9)!important;box-shadow:0 16px 34px rgba(185,67,104,.24)!important}
+.mobile-nav-mail{margin-top:2px;min-height:46px!important;justify-content:center;background:transparent!important;border:0!important;box-shadow:none!important;color:var(--teal)!important;font-size:13px!important;text-decoration:underline;text-underline-offset:4px}
+body.nav-open{overflow:hidden}
+@media(min-width:1101px){.mobile-nav{display:none}}
+@media(max-width:680px){.mobile-nav{padding-top:102px}[id]{scroll-margin-top:100px}}
+
+/* ---- 4. Fluid typography (replaces fixed-px headings) ------------ */
+/* balance keeps Japanese headings from leaving a 1–2 character orphan line */
+h1,h2,h3{text-wrap:balance}
+.lead,.section-heading p,p{text-wrap:pretty}
+h1{font-size:clamp(34px,6vw,76px)}
+h2{font-size:clamp(28px,3.4vw,46px)}
+.business-copy h2{font-size:clamp(28px,4.1vw,56px)}
+.about-hero-copy h1{font-size:clamp(34px,5.6vw,56px)}
+.hallux-hero-copy h1{font-size:clamp(34px,5.6vw,58px)}
+.room-hero-copy h1,.sneaker-hero-copy h1{font-size:clamp(34px,5.6vw,56px)}
+.technology-hero-copy h1{font-size:clamp(34px,5.4vw,54px)}
+.moved-page-panel h1{font-size:clamp(32px,4.6vw,58px)}
+.about-section-copy h2,.about-company-label h2,.about-mvv-section .section-heading h1{font-size:clamp(28px,4vw,52px)}
+.about-cta-panel h2{font-size:clamp(28px,4vw,50px)}
+.products-section-copy h2{font-size:clamp(28px,4vw,52px)}
+.technology-section-copy h2,.technology-axis-section .section-heading h2,.technology-data-section .section-heading h2,.technology-development-section .section-heading h2,.technology-cta-panel h2{font-size:clamp(28px,3.6vw,42px)}
+.room-section-copy h2,.sneaker-section-copy h2{font-size:clamp(28px,3.6vw,42px)}
+.hallux-numbered-copy h2,.hallux-numbered-heading h2{font-size:clamp(28px,4vw,54px)}
+.hallux-numbered-copy h3,.hallux-numbered-heading h3{font-size:clamp(21px,2.7vw,36px)}
+.tech-axis-card h3{font-size:clamp(20px,2.2vw,25px)}
+.about-mvv-card h3{font-size:clamp(19px,2.1vw,24px)}
+.about-team-card h3{font-size:clamp(19px,2vw,22px)}
+.tech-research-profile h3{font-size:clamp(24px,3vw,32px)}
+.tech-medical-note h2{font-size:clamp(24px,2.6vw,30px)}
+.hallux-pie-center strong{font-size:clamp(38px,9vw,58px)}
+.room-concept-card h3{font-size:clamp(24px,3vw,30px)}
+.footer-logo{font-size:clamp(28px,3vw,34px)}
+
+/* ---- 5. Top hero (index) -----------------------------------------
+   The hero artwork is a 16:9 landscape image with the tagline baked in.
+   `cover` on a portrait viewport crops the message away, so below the
+   desktop breakpoint the image is shown whole as a full-width banner. */
+/* Desktop: cap the hero height at the image's own 1672:941 ratio (less the
+   34px bleed) so `cover` can never crop the tagline off the left and right.
+   On short, wide windows 100svh wins and only the top/bottom is trimmed. */
+@media(min-width:1101px){
+  .top-simple-hero{min-height:min(100vh,calc(56.28vw - 36px));min-height:min(100svh,calc(56.28vw - 36px))}
+}
+@media(max-width:1100px){
+  .top-simple-hero{display:block;min-height:0;padding:calc(112px + env(safe-area-inset-top,0px)) 0 0;background:#fff}
+  .top-simple-hero::after{display:none}
+  .top-hero-image{position:relative;left:auto;right:auto;top:auto;bottom:auto;width:100%;height:auto;aspect-ratio:1672/941;object-fit:cover;object-position:center center}
+}
+@media(max-width:680px){
+  .top-simple-hero{padding-top:calc(94px + env(safe-area-inset-top,0px))}
+}
+
+/* ---- 6. Narrow tablet (<=900px) ---------------------------------- */
+@media(max-width:900px){
+  /* three footer columns squeeze the e-mail address below ~900px */
+  .footer-grid{grid-template-columns:1fr 1fr;gap:30px 24px}
+  .footer-brand{grid-column:1/-1}
+  .footer-description{max-width:none}
+  .footer-bottom{display:grid;grid-template-columns:1fr;gap:12px}
+  .footer-bottom p:first-child{max-width:none}
+  /* min-heights were tuned for 3–4 card rows; once stacked they leave dead space */
+  .tech-axis-card,.tech-step-card,.tech-design-grid article,.tech-process-grid article,
+  .about-mvv-card,.about-work-grid article,.products-design-grid article,
+  .room-concept-card,.hallux-approach-grid article,.hallux-choice-grid article,
+  .contact-path,.value-card{min-height:0}
+}
+/* Bounded range: a plain max-width:900px block would sit later in the cascade
+   than the existing max-width:680px rules and leak onto phones. */
+@media(min-width:681px) and (max-width:900px){
+  .products-design-grid,.technology-card-grid.three,.technology-dev-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hallux-customer-grid{grid-template-columns:1fr}
+}
+/* when a split stacks, the heading should read before the side panel */
+@media(max-width:1100px){
+  .technology-split.reverse .technology-section-copy,
+  .products-split.reverse .products-section-copy{order:-1}
+}
+
+/* ---- 7. Phone (<=680px) ------------------------------------------ */
+@media(max-width:680px){
+  .note-panel{grid-template-columns:1fr;gap:16px;padding:26px 22px;border-radius:26px}
+  .note-panel img{width:64px}
+  .contact-path{min-height:0}
+  .contact-path img{width:70px;height:70px}
+  .guide-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .products-lineup-card>img{aspect-ratio:1.2}
+  .about-story-card .about-story-sign{text-align:left}
+  .footer-grid{grid-template-columns:1fr}
+  .site-footer{padding:56px 0 32px}
+  .site-footer li{margin:4px 0}
+  .site-footer li a{display:inline-block;padding:6px 0}
+  .footer-bottom{font-size:11px;margin-top:32px}
+  /* inline citation links: vertical padding grows the hit area without
+     changing layout (they must stay inline so long citations can wrap) */
+  .hallux-source a{padding:7px 0}
+  .hallux-explain-list article{grid-template-columns:30px 1fr;gap:10px;padding:12px 14px}
+  .hallux-explain-list span{width:30px;height:30px}
+  .tech-research-profile dl{gap:10px}
+}
+
+/* ---- 8. Small phone (<=420px) ------------------------------------ */
+@media(max-width:420px){
+  .container{padding-left:max(18px,env(safe-area-inset-left));padding-right:max(18px,env(safe-area-inset-right))}
+  .site-header{left:8px;right:8px}
+  .header-inner{min-height:60px;padding:8px 10px 8px 16px;gap:10px}
+  .brand{min-width:0}
+  .header-inner .brand-logo{font-size:23px}
+  .header-inner .brand-tagline{font-size:10px;letter-spacing:.12em}
+  .nav-toggle{width:42px;height:42px;border-radius:14px}
+  .mobile-nav{padding-top:94px}
+  .btn{min-height:50px;padding:0 18px;font-size:13px}
+  /* hard-coded <br> in headings fights the narrow measure — let text reflow */
+  h1 br,h2 br{display:none}
+  .section{padding:60px 0}
+  .about-story-card,.about-mvv-card,.about-work-grid article,.about-team-card,
+  .about-company-card,.about-cta-panel,.products-lineup-card,.products-design-grid article,
+  .hallux-customer-grid article,.tech-axis-card,.tech-step-card,.tech-research-profile,
+  .tech-medical-note,.technology-cta-panel,.contact-path,.moved-page-panel,
+  .product-link-card,.info-card,.guide-card,.problem-card{padding:18px;border-radius:24px}
+  .news-list{padding:0 14px;border-radius:20px}
+  .hallux-diagram-card{padding:18px;border-radius:26px}
+  .hallux-pie-panel{padding:18px;border-radius:28px}
+  .guide-grid{grid-template-columns:1fr}
+  .about-mvv-card,.tech-axis-card,.tech-step-card,.about-work-grid article,
+  .room-concept-card,.hallux-approach-grid article{min-height:0}
+}
+
+/* ---- 9. Landscape phones (short viewports) ----------------------- */
+@media(orientation:landscape) and (max-height:520px){
+  .site-header{top:8px}
+  .mobile-nav{padding-top:88px}
+  .mobile-nav-links a{min-height:48px}
+  .section{padding:56px 0}
+  .about-hero,.hallux-hero-new,.room-hero,.sneaker-hero,.technology-hero{min-height:0;padding-top:104px;padding-bottom:56px}
+}
+
+/* ---- 10. Touch devices ------------------------------------------- */
+@media(hover:none){
+  .btn:hover{transform:none}
+  .news-item:hover .news-arrow{transform:none}
+}
+
+/* ---- 11. Clearance under the fixed header ------------------------
+   These sections open their page, so they carry the header offset.
+   Declared last so the `.section` padding shorthands above cannot
+   clobber their padding-top. */
+.hallux-what-section,.technology-axis-section,.products-lineup-section,
+.corporate-profile-section{padding-top:156px}
+.contact-entry-section{padding-top:148px}
+@media(max-width:680px){
+  .hallux-what-section,.technology-axis-section,.products-lineup-section,
+  .corporate-profile-section,.contact-entry-section{padding-top:124px}
+}
+@media(max-width:420px){
+  .hallux-what-section,.technology-axis-section,.products-lineup-section,
+  .corporate-profile-section,.contact-entry-section{padding-top:112px}
+}
+@media(orientation:landscape) and (max-height:520px){
+  .hallux-what-section,.technology-axis-section,.products-lineup-section,
+  .corporate-profile-section,.contact-entry-section{padding-top:112px}
+}

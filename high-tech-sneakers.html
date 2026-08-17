@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ハイテクスニーカー | smileee</title>
   <meta name="description" content="ハイテクスニーカーの情報はプロダクトページに統合しました。">
-  <link rel="stylesheet" href="styles.css?v=20260814-text-cards-2">
+  <link rel="stylesheet" href="styles.css?v=20260817-responsive-1">
+  <script src="site.js?v=20260817-responsive-1" defer></script>
 </head>
 <body>
 <header class="site-header" aria-label="グローバルナビゲーション">
@@ -17,9 +18,26 @@
     <nav class="nav-links">
       <a href="about.html">私たちについて</a><a href="hallux-valgus.html">外反母趾について</a><a href="products.html" class="active">プロダクト</a><a href="technology.html">技術・共同研究</a>
     </nav>
-    <a class="header-cta" href="contact.html">お問い合わせ</a>
+    <div class="header-actions">
+      <a class="header-cta" href="contact.html">お問い合わせ</a>
+      <button class="nav-toggle" type="button" id="nav-toggle"
+              aria-controls="global-menu" aria-expanded="false" aria-label="メニューを開く">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
   </div>
 </header>
+
+<div class="mobile-nav" id="global-menu" role="dialog" aria-modal="true" aria-label="メニュー">
+  <nav class="mobile-nav-links" aria-label="モバイルナビゲーション">
+    <a href="about.html">私たちについて</a>
+    <a href="hallux-valgus.html">外反母趾について</a>
+    <a href="products.html" class="active">プロダクト</a>
+    <a href="technology.html">技術・共同研究</a>
+    <a class="mobile-nav-cta" href="contact.html">お問い合わせ</a>
+    <a class="mobile-nav-mail" href="mailto:info@smileee25254.com">info@smileee25254.com</a>
+  </nav>
+</div>
 
 <main>
   <section class="moved-page-section">
